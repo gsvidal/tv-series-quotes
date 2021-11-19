@@ -1,3 +1,6 @@
+# TV-Series Quotes
+A React app where you can choose a tv series and get some of their more famous quotes, you can pick between Smallville and Breaking Bad.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
