@@ -51,16 +51,16 @@ const Selector = ({series, setSeries}) => {
   const urlAPI = series === "smallville" ? "fsfsd" : "https://breaking-bad-quotes.herokuapp.com/v1/quotes";
 
   // Async await
-    const fetchAPI = async function() {
-      const api = await fetch(urlAPI);
-      const result = await api.json();
-      setPhrase(result[0]); 
-    }
+  const fetchAPI = async function() {
+    const api = await fetch(urlAPI);
+    const result = await api.json();
+    setPhrase(result[0]); 
+  }
 
   // Loads a phrase since the firts App mounting
-    useEffect(() => {
-      fetchAPI();
-    },[])
+  useEffect(() => {
+    fetchAPI();
+  },[])
 
   // Handle back button click
   const handleClickBack = () => {

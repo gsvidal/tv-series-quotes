@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 const ContainerQuote = styled.div`
   max-width: 800px;
-  padding: 3.5rem;
+  padding: 3rem;
   background-color: #ffffffdd;
   border: 3px solid grey;
   border-radius: 10px;
@@ -19,8 +19,8 @@ const ContainerQuote = styled.div`
       content: open-quote;
       font-size: 7rem;
       position: absolute;
-      top: -3.5rem;
-      left: -3rem;
+      top: -3.2rem;
+      left: -2.2rem;
     }
   }
 
