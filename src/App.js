@@ -1,6 +1,6 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styled from '@emotion/styled';
-import Quote from './components/Quote';
+import Selector from './components/Selector';
 
 const Container = styled.div`
   display: flex;
@@ -8,50 +8,67 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  /* margin-top: 30rem; */
+  width: 100%;
 `;
-
+const ContainerMain = styled.div`
+  text-align: center;
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 8rem;
+    font-family: 'Shadows Into Light Two', cursive;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+`;
 const Button = styled.button`
-  width: 240px;
-  background: -webkit-linear-gradient(top left, #007d35 0%, #627d35 50%, #0f574e 100%);
-  background-size: 240px; 
-  font-family: Arial, Helvetica, sans-serif;
-  color: #fff;
-  margin-top: 3rem;
   padding: 1rem;
+  margin: 1rem;
   font-size: 2rem;
-  border: 2px solid white;
-  border-radius: 5px;
-  transition: transform 0.2s ease;
-  &:active {
-    opacity: 0.9;
-    transform: scale(0.95);
+  background-color: #cfc;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  color: black;
+  &:hover {
+    background-color: #aca;
   }
 `;
 
 function App() {
 
-  // Quotes state
-  const [ phrase, setPhrase ] = useState({});
+  const [ series, setSeries ] = useState(""); 
 
-  // Async await
-  const fetchAPI = async () => {
-    const api = await fetch("https://breaking-bad-quotes.herokuapp.com/v1/quotes");
-    const result = await api.json();
-    // console.log(phrase)
-    setPhrase(result[0]);
-  } 
+  const handleClick = (event) => {
+    setSeries(event.target.value);
+  }
 
   return (
+
     <Container>
-      <Quote 
-        phrase={phrase}
+      { series 
+      ?
+      <Selector 
+        series={series}
+        setSeries={setSeries}
       />
-      <Button
-        onClick={fetchAPI}
-      >
-          Get quote
-      </Button>
+      :
+      <ContainerMain>
+        <h1>TV SERIES QUOTES</h1>
+        <h2>Select your favourite series to get Quotes!</h2>
+        <Button
+          onClick={handleClick}
+          value="smallville"
+        >Smallville
+        </Button>
+        <Button
+          onClick={handleClick}
+          value="breakingbad"
+        >Breaking bad
+        </Button>
+        
+      </ContainerMain>
+      }
     </Container>
   );
 }

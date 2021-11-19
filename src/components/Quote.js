@@ -8,6 +8,7 @@ const ContainerQuote = styled.div`
   border: 3px solid grey;
   border-radius: 10px;
   font-family: 'Dancing Script', cursive;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   
   h1 {
     padding-left: 2rem;

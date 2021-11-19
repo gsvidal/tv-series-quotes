@@ -16,11 +16,10 @@ html {
   align-items: center;
 }
 body {
-  background-image: url(logo.svg), -webkit-linear-gradient(top left, #007d35 0%, #007d35 40%, #0f574e 100%);
+  background-image: url(""), -webkit-linear-gradient(top left, #d2baff 0%, #9a5fe7 40%, #2b0ecc 100%);
   background-position: center 80px, center center;
   background-repeat:no-repeat;
   background-size: 300px, 100% 100%;
-
 }
 @media (min-width:768px) {
   body {
