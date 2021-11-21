@@ -1,5 +1,18 @@
 # TV-Series Quotes
-A React app where you can choose a tv series and get some of their more famous quotes, you can pick between Smallville and Breaking Bad.
+<a href="https://www.gonzalovidal.dev/tv-series-quotes/">
+  <img src="https://i.postimg.cc/cLfgV2zt/tv-series-quotes-1-1.png">
+</a>
+
+A React App where you can choose tv series and get some of their most famous quotes, for now(21/11/2021) you can pick between Smallville and Breaking Bad.
+<!-- -Smallville API quote was made by Franco for this project. -->
+
+## Features:
+-2 tv series to choose from.
+-Get a quote since you chose one using useEffect.
+-The asyncronous call was made with fetch API.
+-Each tv series have their own color buttons.
+
+<hr />
 
 # Getting Started with Create React App
 

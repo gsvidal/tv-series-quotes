@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import styled from '@emotion/styled';
 import Selector from './components/Selector';
 import btnImgSmallville from './assets/smallville.png';
@@ -86,7 +86,6 @@ function App() {
           className="button__breaking-bad"
         >
         </Button>
-        
       </ContainerMain>
       }
     </Container>

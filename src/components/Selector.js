@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState, useEffect } from 'react';
 import Quote from './Quote';
 import styled from '@emotion/styled';
 
@@ -63,7 +63,7 @@ const Selector = ({series, setSeries}) => {
   // Loads a phrase since the firts App mounting
   useEffect(() => {
     fetchAPI();
-  },[])
+  })
 
   // Handle back button click
   const handleClickBack = () => {

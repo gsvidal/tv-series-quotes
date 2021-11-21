@@ -14,17 +14,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-body {
-  background-image: url(""), -webkit-linear-gradient(top left, #d2baff 0%, #9a5fe7 40%, #2b0ecc 100%);
-  background-position: center 80px, center center;
-  background-repeat:no-repeat;
-  background-size: 300px, 100% 100%;
-}
-@media (min-width:768px) {
-  body {
-    background-size: 400px, 100% 100%;
-  }
+  background-image: -webkit-linear-gradient(top left, #d2baff 0%, #9a5fe7 40%, #2b0ecc 100%);
 }
 #root {
   width: 100%;
