@@ -7,10 +7,13 @@ A React App where you can choose tv series and get some of their most famous quo
 <!-- -Smallville API quote was made by Franco for this project. -->
 
 ## Features:
--2 tv series to choose from.
--Get a quote since you chose one using useEffect.
--The asyncronous call was made with fetch API.
--Each tv series have their own color buttons.
+- 2 tv series to choose from.
+
+- Get a quote since you chose one using useEffect.
+
+- The asyncronous call was made with fetch API.
+
+- Each tv series have their own color buttons.
 
 <hr />
 
