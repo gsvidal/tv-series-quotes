@@ -12,7 +12,7 @@ const ContainerQuote = styled.div`
   
   h1 {
     padding-left: 2rem;
-    font-size: 3rem;
+    font-size: 2.5rem;
     position: relative;
     &::before {
       font-family: Arial, Helvetica, sans-serif;

@@ -34,7 +34,7 @@ const Button = styled.button`
   }
 `;
 const ButtonBack = styled.button`
-  padding: .8rem 2rem;
+  padding: .5rem 2rem;
   margin-top: 5rem;
   font-size: 1.2rem;
   border: 1px solid white;
@@ -48,7 +48,10 @@ const Selector = ({series, setSeries}) => {
   const [ phrase, setPhrase ] = useState({});
 
   // Asigning which tv series will retrieve
-  const urlAPI = series === "smallville" ? "fsfsd" : "https://breaking-bad-quotes.herokuapp.com/v1/quotes";
+  const urlAPISmallville = "";
+  const urlAPIBreakingBad = "https://breaking-bad-quotes.herokuapp.com/v1/quotes";
+
+  const urlAPI = series === "smallville" ? urlAPISmallville : urlAPIBreakingBad ;
 
   // Async await
   const fetchAPI = async function() {
