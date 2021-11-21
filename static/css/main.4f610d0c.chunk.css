@@ -1,2 +1,0 @@
-html{box-sizing:border-box}*,:after,:before{box-sizing:inherit}*{margin:0}html{min-height:700px;height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}body{background-image:url(),-webkit-linear-gradient(top left,#d2baff 0,#9a5fe7 40%,#2b0ecc);background-position:center 80px,50%;background-repeat:no-repeat;background-size:300px,100% 100%}@media (min-width:768px){body{background-size:400px,100% 100%}}#root{width:100%}
-/*# sourceMappingURL=main.4f610d0c.chunk.css.map */
