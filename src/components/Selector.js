@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Quote from './Quote';
 import styled from '@emotion/styled';
 
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -47,23 +46,42 @@ const Selector = ({series, setSeries}) => {
   // Quotes state
   const [ phrase, setPhrase ] = useState({});
 
+  const [ lastRandom, setLastRandom ] = useState(0);
+
   // Asigning which tv series will retrieve
-  const urlAPISmallville = "";
-  const urlAPIBreakingBad = "https://breaking-bad-quotes.herokuapp.com/v1/quotes";
+  const urlAPISmallville = "https://api-smallville.herokuapp.com/api/v1/quotes/";
+
+  const urlAPIBreakingBad = "https://breaking-bad-quotes.herokuapp.com/v1/quotes/";
 
   const urlAPI = series === "smallville" ? urlAPISmallville : urlAPIBreakingBad ;
 
   // Async await
   const fetchAPI = async function() {
-    const api = await fetch(urlAPI);
-    const result = await api.json();
-    setPhrase(result[0]); 
+    let api = await fetch(urlAPI);
+    let result = await api.json();
+    if(series === "smallville") {
+      let randomSmallville = Math.ceil(Math.random()*result.length);
+      console.log(result.length)
+      if(lastRandom === randomSmallville) {
+        if(randomSmallville === result.length) {
+          randomSmallville--;
+        } else {
+          randomSmallville++;
+        }
+      }
+      api = await fetch(urlAPI.replace("quotes","quotesp") + `${randomSmallville}/`);
+      result = await api.json();
+      setPhrase(result); 
+      setLastRandom(randomSmallville)
+    } else {
+      setPhrase(result[0]); 
+    }
   }
 
   // Loads a phrase since the firts App mounting
   useEffect(() => {
     fetchAPI();
-  })
+  },[])
 
   // Handle back button click
   const handleClickBack = () => {

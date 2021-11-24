@@ -4,7 +4,7 @@
 </a>
 
 A React App where you can choose tv series and get some of their most famous quotes, for now(21/11/2021) you can pick between Smallville and Breaking Bad.
-<!-- -Smallville API quote was made by Franco for this project. -->
+-Smallville API quote was made by <a href="https://github.com/francoxr" target="_blank">Franco</a> for this project.
 
 ## Features:
 - 2 tv series to choose from.
