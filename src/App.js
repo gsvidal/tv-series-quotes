@@ -95,7 +95,7 @@ function App() {
           className="button__breaking-bad"
         >
         </Button>
-        <p className="credits">Smallville API made by <a href="https://github.com/francoxr" target="_blank">Franco</a></p>
+        <p className="credits">Smallville API made by <a href="https://github.com/francoxr" target="_blank" rel="noreferrer">Franco</a></p>
       </ContainerMain>
       }
     </Container>
