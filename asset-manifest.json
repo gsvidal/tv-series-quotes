@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/tv-series-quotes/static/css/main.59261a1d.chunk.css",
-    "main.js": "/tv-series-quotes/static/js/main.5dccce06.chunk.js",
-    "main.js.map": "/tv-series-quotes/static/js/main.5dccce06.chunk.js.map",
+    "main.css": "/tv-series-quotes/static/css/main.ffd05389.chunk.css",
+    "main.js": "/tv-series-quotes/static/js/main.c41a8d51.chunk.js",
+    "main.js.map": "/tv-series-quotes/static/js/main.c41a8d51.chunk.js.map",
     "runtime-main.js": "/tv-series-quotes/static/js/runtime-main.2512d7fb.js",
     "runtime-main.js.map": "/tv-series-quotes/static/js/runtime-main.2512d7fb.js.map",
-    "static/js/2.9b393e72.chunk.js": "/tv-series-quotes/static/js/2.9b393e72.chunk.js",
-    "static/js/2.9b393e72.chunk.js.map": "/tv-series-quotes/static/js/2.9b393e72.chunk.js.map",
+    "static/js/2.c1e284c4.chunk.js": "/tv-series-quotes/static/js/2.c1e284c4.chunk.js",
+    "static/js/2.c1e284c4.chunk.js.map": "/tv-series-quotes/static/js/2.c1e284c4.chunk.js.map",
     "static/js/3.d685641d.chunk.js": "/tv-series-quotes/static/js/3.d685641d.chunk.js",
     "static/js/3.d685641d.chunk.js.map": "/tv-series-quotes/static/js/3.d685641d.chunk.js.map",
     "index.html": "/tv-series-quotes/index.html",
-    "static/css/main.59261a1d.chunk.css.map": "/tv-series-quotes/static/css/main.59261a1d.chunk.css.map",
-    "static/js/2.9b393e72.chunk.js.LICENSE.txt": "/tv-series-quotes/static/js/2.9b393e72.chunk.js.LICENSE.txt",
+    "static/css/main.ffd05389.chunk.css.map": "/tv-series-quotes/static/css/main.ffd05389.chunk.css.map",
+    "static/js/2.c1e284c4.chunk.js.LICENSE.txt": "/tv-series-quotes/static/js/2.c1e284c4.chunk.js.LICENSE.txt",
     "static/media/breakingbad.fe978329.png": "/tv-series-quotes/static/media/breakingbad.fe978329.png",
     "static/media/smallville.37709fa2.png": "/tv-series-quotes/static/media/smallville.37709fa2.png"
   },
   "entrypoints": [
     "static/js/runtime-main.2512d7fb.js",
-    "static/js/2.9b393e72.chunk.js",
-    "static/css/main.59261a1d.chunk.css",
-    "static/js/main.5dccce06.chunk.js"
+    "static/js/2.c1e284c4.chunk.js",
+    "static/css/main.ffd05389.chunk.css",
+    "static/js/main.c41a8d51.chunk.js"
   ]
 }
