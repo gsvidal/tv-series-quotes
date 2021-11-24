@@ -35,12 +35,23 @@ const ContainerQuote = styled.div`
 
 const Quote = ({phrase}) => {
 
-  const { quote, author } = phrase;
+  // const { quote, author } = phrase;
 
+  if(!phrase) return null;
   return(
     <ContainerQuote>
-      <h1>{quote}</h1>
-      <p>{author}</p>
+      {phrase.author_id 
+      ? 
+      <>
+        <h1>{phrase.content}</h1>
+        <p>{phrase.author_id.name}</p>
+      </>
+      :
+      <>
+        <h1>{phrase.quote}</h1>
+        <p>{phrase.author}</p>
+      </>
+      }
     </ContainerQuote>
   );
 }

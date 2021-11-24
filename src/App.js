@@ -11,6 +11,7 @@ const Container = styled.div`
   align-items: center;
   padding: 1rem;
   width: 100%;
+  min-height: 100vh;
 `;
 const ContainerMain = styled.div`
   text-align: center;
@@ -38,10 +39,14 @@ const Button = styled.button`
   transition: transform .1s linear;
   &:hover {
     opacity: 1;
-    transform: scale(1.05);
   }
   &.button__smallville {
     background: url(${btnImgSmallville}) center/cover no-repeat;
+    background-size: 135%;
+    transition: background-size .5s linear;
+    &:hover {
+      background-size: 180%;
+    }
     &.disabled {
       opacity: 0.2;
       transform: scale(1);
@@ -50,6 +55,11 @@ const Button = styled.button`
   }
   &.button__breaking-bad {
     background: url(${btnImgBreakingBad}) center/cover no-repeat;
+    transition: background-size 1.5s ease;background-size: 145%;
+    transition: background-size .5s linear;
+    &:hover {
+      background-size: 180%;
+    }
   }
 `;
 
@@ -62,7 +72,6 @@ function App() {
   }
 
   return (
-
     <Container>
       { series 
       ?
@@ -75,9 +84,9 @@ function App() {
         <h1>TV SERIES QUOTES</h1>
         <h2>Select your favourite series to get Quotes!</h2>
         <Button
-          // onClick={handleClick}
+          onClick={handleClick}
           value="smallville"
-          className="button__smallville disabled"
+          className="button__smallville"
         >
         </Button>
         <Button
@@ -86,6 +95,7 @@ function App() {
           className="button__breaking-bad"
         >
         </Button>
+        <p className="credits">Smallville API made by <a href="https://github.com/francoxr" target="_blank">Franco</a></p>
       </ContainerMain>
       }
     </Container>
